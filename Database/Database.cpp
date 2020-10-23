@@ -24,7 +24,6 @@ int main() {
 		printf("Enter score :");
 		scanf("%d", &students[i].score);
 	}
-	
 	for (i = 0; i < n; i++)
 	{
 		for (j = i + 1; j < n; j++)
