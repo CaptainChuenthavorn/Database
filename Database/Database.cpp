@@ -14,14 +14,14 @@ int main() {
 	struct STUDENT* students;
 	int n;
 	int i, j,temp;
+	printf("Percentile calculator!!\n");
+	printf("How many people you want to calculate : ");
 	scanf("%d", &n);
 	students = (struct STUDENT*)malloc (n * sizeof(struct STUDENT));
 	for (int i = 0;i < n; i++) {
-		printf("Enter name :");
+		printf("Enter name  %d :",i+1);
 		scanf("%s", students[i].name);
-	}
-	for (int i = 0;i < n; i++) {
-		printf("Enter score :");
+		printf("Enter score %d :",i+1);
 		scanf("%d", &students[i].score);
 	}
 	for (i = 0; i < n; i++)
